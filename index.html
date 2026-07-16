@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Influencer Performance Dashboard</title>
+    <script type="module">
+      import tailwindcss from "https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4/+esm";
+    </script>
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100">
+    <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+      <header class="mb-6 rounded-3xl border border-slate-800 bg-slate-900/80 p-6 shadow-2xl shadow-black/20">
+        <div class="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <p class="text-sm uppercase tracking-[0.35em] text-cyan-400">Influencer dashboard</p>
+            <h1 class="mt-2 text-3xl font-semibold sm:text-4xl">Performance overview for the current campaign</h1>
+            <p class="mt-3 max-w-2xl text-sm text-slate-400 sm:text-base">
+              Track revenue, engagement, and conversion efficiency across platforms and products in one place.
+            </p>
+          </div>
+          <div class="rounded-2xl border border-cyan-500/30 bg-cyan-500/10 px-4 py-3 text-sm text-cyan-200">
+            <p class="font-medium">Weekly snapshot</p>
+            <p class="mt-1 text-xl font-semibold">+18.4% vs. last week</p>
+          </div>
+        </div>
+      </header>
+
+      <main class="space-y-6">
+        <section class="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+          <article class="rounded-2xl border border-slate-800 bg-slate-900 p-5 shadow-lg shadow-black/10">
+            <p class="text-sm text-slate-400">Commission revenue</p>
+            <p class="mt-2 text-3xl font-semibold text-white">$42,680</p>
+            <p class="mt-3 text-sm text-emerald-400">▲ 12.8% this month</p>
+          </article>
+          <article class="rounded-2xl border border-slate-800 bg-slate-900 p-5 shadow-lg shadow-black/10">
+            <p class="text-sm text-slate-400">Units sold</p>
+            <p class="mt-2 text-3xl font-semibold text-white">1,284</p>
+            <p class="mt-3 text-sm text-emerald-400">▲ 9.1% this month</p>
+          </article>
+          <article class="rounded-2xl border border-slate-800 bg-slate-900 p-5 shadow-lg shadow-black/10">
+            <p class="text-sm text-slate-400">Average selling price</p>
+            <p class="mt-2 text-3xl font-semibold text-white">$88</p>
+            <p class="mt-3 text-sm text-amber-400">Balanced across products</p>
+          </article>
+          <article class="rounded-2xl border border-slate-800 bg-slate-900 p-5 shadow-lg shadow-black/10">
+            <p class="text-sm text-slate-400">Conversion rate</p>
+            <p class="mt-2 text-3xl font-semibold text-white">4.6%</p>
+            <p class="mt-3 text-sm text-emerald-400">▲ 0.8 pts week-over-week</p>
+          </article>
+          <article class="rounded-2xl border border-slate-800 bg-slate-900 p-5 shadow-lg shadow-black/10">
+            <p class="text-sm text-slate-400">Best ROI platform</p>
+            <p class="mt-2 text-3xl font-semibold text-white">YouTube</p>
+            <p class="mt-3 text-sm text-cyan-400">ROI 3.2x</p>
+          </article>
+        </section>
+
+        <section class="grid gap-6 xl:grid-cols-[1.2fr_0.8fr]">
+          <article class="rounded-3xl border border-slate-800 bg-slate-900 p-6 shadow-xl shadow-black/10">
+            <div class="flex items-center justify-between">
+              <div>
+                <h2 class="text-xl font-semibold">Drivers</h2>
+                <p class="mt-1 text-sm text-slate-400">Performance by platform and product</p>
+              </div>
+              <span class="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-sm text-emerald-300">Healthy growth</span>
+            </div>
+            <div class="mt-6 grid gap-4 sm:grid-cols-3">
+              <div class="rounded-2xl border border-slate-800 bg-slate-950/70 p-4">
+                <p class="text-sm text-slate-400">Qualified leads</p>
+                <p class="mt-2 text-2xl font-semibold">68%</p>
+              </div>
+              <div class="rounded-2xl border border-slate-800 bg-slate-950/70 p-4">
+                <p class="text-sm text-slate-400">Attendance rate</p>
+                <p class="mt-2 text-2xl font-semibold">82%</p>
+              </div>
+              <div class="rounded-2xl border border-slate-800 bg-slate-950/70 p-4">
+                <p class="text-sm text-slate-400">Pass rate</p>
+                <p class="mt-2 text-2xl font-semibold">74%</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="rounded-3xl border border-slate-800 bg-slate-900 p-6 shadow-xl shadow-black/10">
+            <h2 class="text-xl font-semibold">Most engaged platforms</h2>
+            <div class="mt-5 space-y-4">
+              <div>
+                <div class="mb-1 flex justify-between text-sm">
+                  <span>Instagram</span>
+                  <span class="text-cyan-300">6.8%</span>
+                </div>
+                <div class="h-2 rounded-full bg-slate-800">
+                  <div class="h-2 w-[68%] rounded-full bg-cyan-500"></div>
+                </div>
+              </div>
+              <div>
+                <div class="mb-1 flex justify-between text-sm">
+                  <span>TikTok</span>
+                  <span class="text-fuchsia-300">5.3%</span>
+                </div>
+                <div class="h-2 rounded-full bg-slate-800">
+                  <div class="h-2 w-[53%] rounded-full bg-fuchsia-500"></div>
+                </div>
+              </div>
+              <div>
+                <div class="mb-1 flex justify-between text-sm">
+                  <span>YouTube</span>
+                  <span class="text-emerald-300">4.9%</span>
+                </div>
+                <div class="h-2 rounded-full bg-slate-800">
+                  <div class="h-2 w-[49%] rounded-full bg-emerald-500"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="grid gap-6 lg:grid-cols-2">
+          <article class="overflow-hidden rounded-3xl border border-slate-800 bg-slate-900 shadow-xl shadow-black/10">
+            <div class="border-b border-slate-800 px-6 py-4">
+              <h2 class="text-xl font-semibold">Top products</h2>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="min-w-full text-left text-sm">
+                <thead class="bg-slate-950/70 text-slate-400">
+                  <tr>
+                    <th class="px-6 py-3">Product</th>
+                    <th class="px-6 py-3">Revenue</th>
+                    <th class="px-6 py-3">Conversions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-t border-slate-800">
+                    <td class="px-6 py-3">Product A</td>
+                    <td class="px-6 py-3">$18,430</td>
+                    <td class="px-6 py-3">412</td>
+                  </tr>
+                  <tr class="border-t border-slate-800">
+                    <td class="px-6 py-3">Product B</td>
+                    <td class="px-6 py-3">$14,920</td>
+                    <td class="px-6 py-3">301</td>
+                  </tr>
+                  <tr class="border-t border-slate-800">
+                    <td class="px-6 py-3">Product C</td>
+                    <td class="px-6 py-3">$9,330</td>
+                    <td class="px-6 py-3">188</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="overflow-hidden rounded-3xl border border-slate-800 bg-slate-900 shadow-xl shadow-black/10">
+            <div class="border-b border-slate-800 px-6 py-4">
+              <h2 class="text-xl font-semibold">Platform performance</h2>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="min-w-full text-left text-sm">
+                <thead class="bg-slate-950/70 text-slate-400">
+                  <tr>
+                    <th class="px-6 py-3">Platform</th>
+                    <th class="px-6 py-3">Reach</th>
+                    <th class="px-6 py-3">ROI</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-t border-slate-800">
+                    <td class="px-6 py-3">Instagram</td>
+                    <td class="px-6 py-3">324k</td>
+                    <td class="px-6 py-3">2.8x</td>
+                  </tr>
+                  <tr class="border-t border-slate-800">
+                    <td class="px-6 py-3">TikTok</td>
+                    <td class="px-6 py-3">410k</td>
+                    <td class="px-6 py-3">2.4x</td>
+                  </tr>
+                  <tr class="border-t border-slate-800">
+                    <td class="px-6 py-3">YouTube</td>
+                    <td class="px-6 py-3">182k</td>
+                    <td class="px-6 py-3">3.2x</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
